@@ -1,7 +1,6 @@
 # cell.py
 
 import pygame
-from solver import valid, backtrack
 
 pygame.font.init()
 
