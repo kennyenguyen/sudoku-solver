@@ -13,10 +13,10 @@ def redraw_window(screen, board, time, strikes):
     # draw time
     font = pygame.font.SysFont("Tahoma", 40)
     text = font.render("Time: " + format_time(time), 1, (0, 0, 0))
-    screen.blit(text, (540 - 160, 560))
+    screen.blit(text, (270, 545))
     # draw strikes
-    text = font.render("X " * strikes, 1, (255, 0, 0))
-    screen.blit(text, (20, 560))
+    text = font.render("X: " + str(strikes), 1, (255, 0, 0))
+    screen.blit(text, (20, 545))
     # draw grid
     board.draw(screen)
 
